@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html dom manipulation</title>
+</head>
+<body>
+    <h1 id="aman">Welcome to amanjot singh</h1>
+
+    <h2 class="code">Welcome to amanjot singh again</h2>
+    <h2 class="code">welcome here</h2>
+
+    <h3>Welcome to my website</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur similique vero doloremque? Hic delectus officia praesentium corporis, reiciendis ipsum odit veniam velit libero animi quasi sit harum eveniet, 
+        vero nisi molestiae. Molestiae neque vel enim quae officia id facilis maiores!</p>
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, maxime.
+    </span>
+    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         In fugit maiores nulla porro corrupti blanditiis!</span>
+         <p id="myPara">
+            This element     has <span>spacing</span>
+        </p>
+        <div id="myPara2">
+        This element     has <span>spacing</span>
+
+        <p style="display: none">This has a property Hidden</p>
+    </div>
+
+
+    <script>
+//html manipulation        
+//Selecting the element with id as "codehelp1"
+   //by id
+    let element = document.getElementById("aman");
+    console.log(element);
+    //by classname
+    let element2=document.getElementsByClassName("code");
+   //tagname
+    let tagg=document.getElementsByTagName("h2");
+    let tag3=document.getElementsByTagName("h3");
+   //query selector
+    let para=document.querySelector("p");
+    //queryselectorall
+    let atag=document.querySelectorAll("span");
+    let myElement = document.getElementById("myPara");
+      
+          //Now retrieving outerHTML of the selected element
+          let contents = myElement.outerHTML;
+      
+          console.log(contents);
+
+
+     // modifying elements
+     //inner html use
+       let content=element.innerHTML;
+       console.log(content);
+       element.innerHTML="amanjot";
+       //innertext prperty
+       //maindifference between both is that innertext dont take into consideration the child of the main tag
+       let content2=element2[0].innerText;
+       console.log(content2);
+       element2[1].innerText="omg yeh mera india";
+
+       let myElement2 = document.getElementById("myPara");
+          let content3 = myElement2.textContent;
+      
+          console.log(content3);
+      let newPara = 'Hiii';
+          myElement2.textContent = newPara;
+
+    //css manipulation
+    //Now changing the background color of the selected HTML element
+    element.style.backgroundColor = "red";
+    element2[0].style.color="orange";
+    element2[1].style.color="pink";
+    tagg[1].style.backgroundColor="lightgreen";
+    tag3[0].style.backgroundColor="yellow";
+    para.style.backgroundColor="aquamarine";
+    console.log(atag);
+    atag[1].style.backgroundColor = "aqua";
+
+    //modifying html dom
+    //create element
+    //syntax
+    //let newElement = document.createElement(tagName);
+    let newElement1 = document.createElement('div');
+    console.log(newElement1); 
+    
+    let newElement3 = document.createElement('h1');
+     console.log(newElement3); 
+     //adding content to it
+     newElement1.textContent = "Hello guys!"
+    console.log(newElement1);  
+    //append child
+    //synatx
+    //parentNode.appendChild(node);
+    let paragraph = document.createElement('p');
+  paragraph.textContent = "Hello is a paragraph";
+  document.body.appendChild(paragraph);
+</script>
+</body>
+</html>

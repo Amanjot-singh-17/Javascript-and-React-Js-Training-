@@ -1,0 +1,93 @@
+<!-- day 8-->
+ <!--CSS DOM manipulation-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DOM manipulation</title>
+ </head>
+ <body>
+    <h1>welcome to my website</h1>
+    <p id="first-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis ex et architecto saepe minus perspiciatis repellat doloremque quae incidunt sequi, dicta alias,
+         dolor ducimus amet rerum ipsa corporis asperiores atque!</p>
+    <p id="second-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, perferendis. Id, iusto provident? Dolorum, hic perspiciatis explicabo minus, modi dignissimos quod tenetur voluptas maxime suscipit
+         debitis quidem cum nesciunt? Officia aspernatur facilis velit magnam voluptatem!</p>
+    <div id="div-ele">
+            Hello Guys, Welcome back  to my YOUTUBE CHANNEL!
+    </div>
+    <a id="att">
+        Visit to google!
+    </a>
+    <p id="demo" title="Example Paragraph"></p>>This is a paragraph.</p>
+
+    <button onclick="addAttribute()">Add Attribute</button>
+
+
+    
+    <script>
+        // syntax for STYLE attribute
+        // Accessing an element
+        //const element = document.getElementById("myElement");
+
+        // Setting a style property
+         //element.style.property = "value";
+
+        // Getting a style property
+        //const propertyValue = element.style.property;
+        const element = document.getElementById("first-para");
+        element.style.backgroundColor="red";
+        element.style.color="white";
+        element.style.fontSize="35px";
+
+
+        //cssText property
+        //it can set multiple individual css property using single line 
+        //syntax
+        // Accessing an element
+        //const element = document.getElementById("myElement");
+
+         // Setting cssText property
+         //element.style.cssText = "property1: value1; property2: value2;";
+
+        // Getting cssText property
+        //const currentStyles = element.style.cssText;
+        const element2 = document.getElementById('second-para');
+
+     // Modify its CSS properties using cssText
+     element2.style.cssText = 'color:aquamarine; font-size: 18px; background-color: green;';
+        const currentStyles = element2.style.cssText;
+        const currentStyles1 = element.style.color;
+        //printing in the console the values of property
+        console.log(currentStyles);
+        console.log(currentStyles1);
+
+        //setAttribute()
+        //used to update the existing attribute or insert a new attribute to the code
+        //syntax
+        //element.setAttribute(attributeName, attributeValue);
+
+        //updating css with this method 
+        let myElement = document.getElementById("div-ele");
+        myElement.setAttribute("class", "helpcode");
+        myElement.setAttribute("style", "background-color:red;")
+
+        //adding href attribute to a link
+        let myElement4 = document.getElementById("att");
+
+        //Now Let's try to add a "link = www.codehelp.in" to myElement using setAttribute() method...
+       myElement4.setAttribute("href", "https://www.youtube.com/");
+
+       // adding style to content
+       function addAttribute() {
+            var para = document.getElementById("demo");
+            para.setAttribute("style", "color: red; font-size: 20px;");
+            para.setAttribute("class", "highlight");
+
+            //getattribute
+            var titleAttributeValue = para.getAttribute("title");
+            alert("The value of the 'title' attribute is: " + titleAttributeValue);
+       }
+</script>
+ </body>
+ </html>

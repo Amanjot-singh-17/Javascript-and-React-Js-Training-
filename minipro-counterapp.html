@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color:black;
+            width:100vw;
+            height: 100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+        }
+        .wrapper{
+            border:1px solid darksalmon;
+            padding:2rem;
+            box-shadow: 5px 12px 19px darksalmon; 
+        }
+        #count{
+            color:white;
+            text-align:center;
+            font-size: xx-large;
+            font-weight: 100;
+        }
+        button{
+            background-color:darksalmon;
+             border-radius:6px;
+             border:none;
+             padding:0.6rem;
+             margin:1rem;
+        }
+        #content{
+            color:darksalmon;
+            text-align:center;
+            font-size:40px;
+            margin-bottom:1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class = container>
+      <div class="wrapper"> 
+        <div id="content">COUNTER APP</div>
+        <div id = "count">
+        0
+    </div>
+</br>
+    <div id = "buttons">
+        <!-- Create all three buttons here -->
+        <button id="increase">Increase</button>
+        <button id="decrease">Decrease</button>
+        <button id="reset">Reset</button>
+        
+        
+    </div></div>
+    </div>
+    <script>
+        //Write your javascript code here
+function increase(){
+let no1=document.getElementById('count');
+    let num=no1.textContent;
+    num++;
+    no1.textContent=num;
+}
+function decrease(){
+let no1=document.getElementById('count');
+    let num=no1.textContent;
+    if (num>0)
+    num--;
+    else 
+        num=0;
+    no1.textContent=num;
+}
+function reset(){
+let no1=document.getElementById('count');
+    let num=no1.textContent;
+    num=0;
+    no1.textContent=num;
+}
+let incbtn=document.getElementById('increase');
+let decbtn=document.getElementById('decrease')
+let resbtn=document.getElementById('reset');
+incbtn.addEventListener('click',increase);
+decbtn.addEventListener('click',decrease);
+resbtn.addEventListener('click',reset);
+    </script>
+</body>
+</html>

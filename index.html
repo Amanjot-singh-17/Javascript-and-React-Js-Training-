@@ -1,104 +1,122 @@
 <html>
 <head>
-<title>WEB DEVELOPMENT</title>
+<title>REACT JS </title>
 <style>
-    body{
-	    font-family:italic;
+    *{
+	    box-sizing:border-box;
 		margin:0px;
 		padding:0px;
-		background-size:cover;
-	}
-	.container {
-            width: 90%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 80px;
-        }
-    header {
-            display:inline;
-			width:100%;
-        }
-    header img {
-            height: 50px;
-        }
-    h1, h2{
-		font-style: italic;
-		color:black;
-		 text-align:center;
-		}
-      button{
-        color:white;
-        background-color: blue;
-		cursor:pointer;
-	   border-radius: 5px;
-      }
-	.btn:hover
-	{
-	    text-decoration: underline;
-            background-color: rgb(191, 172, 243);
-		color:white;
-            }
-    nav{
-	    text-align:center;
-		margin-bottom:20px;
-		margin-top: 4px;
 		
 	}
-.main{
-	margin: 20px;
-}
-#name{
+	.container {
+            width: 100vw;
+            height:100vh;
+			background-image:url("https://www.rentallscript.com/resources/content/images/2021/09/React--1-.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    .wrapper1{
+            width:50vw;
+			margin:0 auto;
+            height:200px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:0.5rem;
+			padding-top:1rem;
+        }
 
-	margin-left: 80%;
+     header h1,h2{
+        padding-top:5px;
+		font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		color:white;
+		 text-align:center;
+		}
+    .link{
+		width:500px;
+		margin: 0 auto;
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+		justify-content:space-around;
+		padding:1rem;
+		gap:1rem;
+		background: rgba(253, 251, 251, 0.2); /* Semi-transparent white */
+        backdrop-filter: blur(1px); /* Blur the background */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 1); 
+	    width:600px;
+	    border:3px solid darkblue;
+		outline:3px solid magenta;
+		outline-offset:15px;
+	    border-radius:1rem;
+		margin-top: 3rem;
+		animation: fadeInMoveRight 5s ease forwards;
 }
+
+/* Define the keyframes for the animation */
+@keyframes fadeInMoveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+	.btn{
+		width:8rem;
+		height:2rem;
+		background-image:linear-gradient(to right,magenta,darkblue);
+		color:white;
+		border-radius:1em;;
+
+	}
+	.btn:hover
+	{
+		background-image:linear-gradient(to right,darkblue,magenta);
+	
+    }
+
+
 </style>
 <head>
-	<body style="background-image:url('https://v4lab-company.s3.ap-south-1.amazonaws.com/images/documents/1dd5c02af0dbd0d29bdf4860bf927314.jpg'); background-image: no-repeat center fixed;
-    background-size:100%;">
+	<body>
     <div class="container">
-	    <header>
-		    <a href="https://www.gndec.ac.in/" target="_blank">
-                <center><img src="https://srijansingh9.github.io/Training-102-Report/gndecLogo.png" alt="GNDEC Logo"></center>
-		    </a>	
+	    <header class="wrapper1">
+		    
 			<h1>REACT JS TRAINING </h1>
 			<h2>TRAINING TR-102 REPORT</h2>
 			<h2>(4 Week Training)</h2>
         </header>
-		<nav>
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day1.js"><button type="button" class="btn btn-info">Day 1</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day2.js"><button type="button" class="btn btn-info">Day 2</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day3js"><button type="button" class="btn btn-info">Day 3</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day4.js"><button type="button" class="btn btn-info">Day 4</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day5.js"><button type="button" class="btn btn-info">Day 5</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day6.js"><button type="button" class="btn btn-info">Day 6</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day7.html"><button type="button" class="btn btn-info">Day 7</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day8.html"><button type="button" class="btn btn-info">Day 8</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/tree/main/day9"><button type="button" class="btn btn-info">Day 9</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day10.html"><button type="button" class="btn btn-info">Day 10</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<div class="main"><a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/app.js"><button type="button" class="btn btn-info">Day 11</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/tree/main/components%20day12"><button type="button" class="btn btn-info">Day 12</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/tree/main/components%20day13"><button type="button" class="btn btn-info">Day 13</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day14.js"><button type="button" class="btn btn-info">Day 14</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/tree/main/components%20day15"><button type="button" class="btn btn-info">Day 15</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/appday16.js"><button type="button" class="btn btn-info">Day 16</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/appday17.js"><button type="button" class="btn btn-info">Day 17</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/appday18.js"><button type="button" class="btn btn-info">Day 18</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://AmanpreetKaur-123.github.io/Amanpreet-kaur/3rd July.js.pdf"><button type="button" class="btn btn-info">Day 19</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://AmanpreetKaur-123.github.io/Amanpreet-kaur/5th July.js.pdf"><button type="button" class="btn btn-info">Day 20</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			</div>
-		</nav>
-	</div><br><br><br><br><br><br><br><br><br><br><br><br>
-	<div id="name">
-		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVcAAACTCAMAAAAN4ao8AAAAhFBMVEX///8AAAD6+vr39/f09PTT09Px8fHMzMz
-			g4ODk5OTp6ent7e2EhISbm5u8vLx2dnaMjIyxsbGmpqbY2NheXl6+vr7FxcU/Pz9xcXFqamqsrKxkZGS3t7dUVFQkJCQ3NzctLS1GRkY
-			YGBg5OTmHh4cTExOUlJQeHh5MTEwpKSkLCwtWVlbZ+xOZAAAH6klEQVR4nO2c2WKyOhCAGZRVENkXRcEFqb7/+x1AigFRrAuQ
-			/8x3RZHa6ZDMlkkYBkEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQetAnQ0vwC
-			VhOHFqEOjqshhbhA3AuRMrQQpCwO0iGluF9EtjJU5CGFoNgBd7QIrzNxIKUZ5hIGFoQAh/MoUV4F3EHS5ZhZjAbWpIrM4iHFuFdxG2hVsY8jMgB67Af
-			WoQ3ydQaFgrVraFFIfBgTEbpBUSAkC2u/BHFA9Of44iM0gtIAFE5/Xf6sKKQSDCmyfN3pls4TC+X8pjclgHB0CK8RQQgl5cc8IOKUsNrxtIjcqlP4MI
+
+		<div class="link">
+            <a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day1.js"><button type="button" class="btn btn-info">Day 1</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day2.js"><button type="button" class="btn btn-info">Day 2</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day3.js"><button type="button" class="btn btn-info">Day 3</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day4.js"><button type="button" class="btn btn-info">Day 4</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day5.js"><button type="button" class="btn btn-info">Day 5</button></a> 
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day6.js"><button type="button" class="btn btn-info">Day 6</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day7.html"><button type="button" class="btn btn-info">Day 7</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day8.html"><button type="button" class="btn btn-info">Day 8</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/tree/main/day9"><button type="button" class="btn btn-info">Day 9</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day10.html"><button type="button" class="btn btn-info">Day 10</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/App.js"><button type="button" class="btn btn-info">Day 11</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/tree/main/components%20day12"><button type="button" class="btn btn-info">Day 12</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/tree/main/components%20day13"><button type="button" class="btn btn-info">Day 13</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day14.js"><button type="button" class="btn btn-info">Day 14</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/tree/main/components%20day%2015"><button type="button" class="btn btn-info">Day 15</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/appday16.js"><button type="button" class="btn btn-info">Day 16</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/appday17.js"><button type="button" class="btn btn-info">Day 17</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/appday18.js"><button type="button" class="btn btn-info">Day 18</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/day19.js.js"><button type="button" class="btn btn-info">Day 19</button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/tree/main/stopwatch%20react%20app"><button type="button" class="btn btn-info">Stopwatch App </button></a>
+			<a href="https://github.com/Amanjot-singh-17/Javascript-and-React-Js-Training-/blob/main/minipro-counterapp.html"><button type="button" class="btn btn-info">Counter App JS  </button></a>
+
+        </div>
 			
-			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" width="100%" height="8%">
-	</div>
+			</div>
+	
+	
+	
 </body>
 </html>
